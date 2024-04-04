@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    max-width: 1200px; /* Maximum width of the container */
+    margin: 0 auto; /* Center the container */
+    padding: 20px;
+  }
+  
+  .feature {
+    flex: 0 0 calc(33.33% - 20px); /* Each feature takes up 33.33% of the container width with 20px spacing */
+    margin-bottom: 20px; /* Add space between features */
+    padding: 20px; /* Add internal spacing */
+    background-color: #f9f9f9; /* Background color for features */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  .feature img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 10px; /* Add space between image and text */
+  }
+  
+  .feature h3 {
+    font-size: 18px;
+    margin-bottom: 10px; /* Add space between heading and paragraph */
+  }
+  
+  .feature p {
+    font-size: 14px;
+    color: #666; /* Text color */
+  }
+  

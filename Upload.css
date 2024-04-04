@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, sans-serif; /* Use a modern font */
+  background-color: #f4f4f4; /* Light background color */
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 800px; /* Reduce maximum width for better readability */
+  margin: 20px auto; /* Center the wrapper and add some space around it */
+  padding: 20px;
+  background-color: #fff; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.custom-form {
+  margin-top: 20px; /* Increase top margin for better spacing */
+  width: 100%; /* Take full width */
+}
+
+.wrapper h3 {
+  text-align: center;
+  color: #333; /* Dark text color */
+  margin-bottom: 20px; /* Add some space below the heading */
+  font-size: 24px; /* Increase font size */
+}
+
+.btn {
+  margin: 10px auto; /* Center the button horizontally */
+  display: block; /* Make the button a block element */
+  padding: 10px 20px; /* Add padding for better appearance */
+  background-color: #007bff; /* Button color */
+  color: #fff; /* Text color */
+  border: none; /* Remove border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  font-size: 16px; /* Button font size */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.btn:hover {
+  background-color: #0056b3; /* Darker button color on hover */
+}
+
+.viewer {
+  width: 60%;
+  background-color: #e4e4e4;
+  padding: 13px;
+  margin-left: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Add space above the viewer */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.highlighted-term {
+  color: #007bff; /* Blue color for highlighted terms */
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.highlighted-term:hover {
+  text-decoration: underline;
+}
+
+.line {
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+}
+
+.dialog-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+.dialog-box-content {
+  max-width: 400px;
+}
+
+.close {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  cursor: pointer;
+}
+.wrapper h3 {
+  text-align: center;
+  margin-left: 30%;
+  color: #333; /* Initial text color */
+  animation: centerAnimation 1s infinite alternate; /* Apply animation */
+}
+
+@keyframes centerAnimation {
+  0% {
+    margin-left: auto;
+    color: #333; /* Initial text color */
+  }
+  50% {
+    margin-left: auto%;
+    color: #ff5733; /* Transitioned text color */
+  }
+  100% {
+    margin-left: auto;
+    color: #333; /* Back to initial text color */
+  }
+}
